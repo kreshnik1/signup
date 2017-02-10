@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_log_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="#3F51B5"
+    tools:context="com.example.kreshnik.signup.MainActivity"
+    android:screenOrientation="portrait"
+    >
+
+    <EditText
+
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="21sp"
+        android:textColorLink="?attr/colorPrimary"
+        android:hint="Username"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#ffffffff"
+        android:textColorHint="#ffffffff"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:textColorHint="#ffffffff"
+        android:textColorLink="?attr/colorPrimary"
+        android:hint="Password"/>
+
+    <Button
+        android:text="Sign in "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/button"
+        android:elevation="0dp"
+        style="@android:style/Widget.Button"
+        android:background="#5C6BC0"
+        android:fontFamily="sans-serif"
+        android:textSize="21sp"
+        android:textColor="#ffffffff"/>
+
+    <TextView
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="No account yet? Create one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="#ffffffff"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dip"
+          android:background="#FFFFFF"
+          android:layout_marginTop="30dp"
+        />
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="#5C6BC0"
+        android:textSize="21sp"
+        android:id="@+id/button1"
+        android:textColor="#ffffffff"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"/>
+</LinearLayout>

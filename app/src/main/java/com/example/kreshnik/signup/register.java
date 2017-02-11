@@ -38,10 +38,16 @@ public class register extends AppCompatActivity {
             }
         });
     }
+
     public void onSignUpSucces(){
-        Intent intent = new Intent("com.example.kreshnik.signup.MainActivity");
+        Intent intent = new Intent("com.example.kreshnik.signup.home");
         startActivity(intent);
     }
+
+    /**
+     * validate - this function validates the user fields
+     * @return boolean
+     */
     public boolean validate(){
         boolean valid=true;
         if(name.isEmpty()||name.length()>32){
@@ -61,12 +67,24 @@ public class register extends AppCompatActivity {
             et_pass.setError("Please");
             valid=false;
         }
-        
+        if (!confirmPass.equals(pass) || confirmPass.length() <= 6) {
+            et_confirmPass.setError("Password doesn't match");
+            valid = false;
+        }
+
         return valid;
     }
+
+    /**
+     *
+     */
     public void register(){
         initialize();
     }
+
+    /*
+     *
+     */
     public void initialize(){
         name=et_name.getText().toString().trim();
         surname=et_surname.getText().toString().trim();

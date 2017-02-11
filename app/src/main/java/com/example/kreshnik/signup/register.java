@@ -61,7 +61,7 @@ public class register extends AppCompatActivity {
             et_pass.setError("Please");
             valid=false;
         }
-        if()
+        
         return valid;
     }
     public void register(){
